@@ -20,6 +20,24 @@ bot.on('message', message => {
 	}
   });
 
+  bot.on('message', message => {
+	if (message.content === 'yo') {
+	message.channel.send("haha fuckin yo brooo whats fuckin goood")
+	}
+  });
+
+  bot.on('message', message => {
+	if (message.content === 'hey') {
+	message.channel.send("whats fuckin good homie")
+	}
+  });
+
+  bot.on('message', message => {
+	if (message.content === 'hi') {
+	message.channel.send("whats fuckin good homie")
+	}
+  });
+
 var nocommand = [
 	"use a valid command u stupid bitch",
 	"what the fuck"
@@ -220,6 +238,7 @@ bot.on("message", function(message) {
 				.addField("invite", "link to invite me")
 				.addField("site", "link to my website")
 				.addField("8ball", "answers yes or no questions")
+				.addField("fuckme", "answers all your hopes and dreams")
 				.setFooter("make sure to smash that motherfuckin like button")
 				.setThumbnail(message.author.avatarURL)
 				.setColor(0xed1c24)
