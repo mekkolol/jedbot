@@ -1,7 +1,5 @@
 const Discord = require("discord.js");
 
-const TOKEN = "NTAyMTk4NDc1NDA1MDAwNzI1.Ds-iTw.jjNp2XlAJ3Rjf0e61nL8FTezPC0"
-
 const PREFIX = "pp!"
 
 var bot = new Discord.Client();
@@ -310,4 +308,4 @@ bot.on('ready', () => {
 	bot.user.setGame(gamelol[Math.floor(Math.random() * gamelol.length)] + " | " + PREFIX);
   });
 
-bot.login(TOKEN);
+bot.login(process.env.BOT_TOKEN);
