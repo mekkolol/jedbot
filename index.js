@@ -282,6 +282,9 @@ bot.on("message", function(message) {
 		case "avatar":
 			message.channel.send(message.author + "'s avatar: " + message.author.avatarURL)
 		break;
+		case "say":
+			message.channel.send(args[1]);
+		break;
 		case "flip":
 		message.channel.send(coin[Math.floor(Math.random() * coin.length)])
 		break;
