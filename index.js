@@ -283,7 +283,10 @@ bot.on("message", function(message) {
 			message.channel.send(message.author + "'s avatar: " + message.author.avatarURL)
 		break;
 		case "say":
-			message.channel.send(args[0]);
+			message.channel.send("no");
+		break;
+		case "fuckme":
+			message.channel.send("ok " + message.author + " i'm down");
 		break;
 		case "flip":
 		message.channel.send(coin[Math.floor(Math.random() * coin.length)])
