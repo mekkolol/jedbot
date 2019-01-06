@@ -1,0 +1,14 @@
+{
+  "name": "jedBot",
+  "version": "1.0.0",
+  "description": "shit up your mouth",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "mekko",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
